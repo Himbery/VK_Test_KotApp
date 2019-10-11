@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_height="50dp"
+                    android:layout_width="match_parent"
+                    android:background="@android:color/white" >
+
+    <TextView android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:layout_centerInParent="true"
+              android:gravity="center"
+              android:textSize="17sp"
+              android:id="@+id/title_name"/>
+
+    <ImageView android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:id="@+id/back_btn"
+               android:elevation="2dp"
+               android:src="@drawable/back_icon"
+               android:padding="10dp"
+               android:layout_marginStart="6dp"
+               android:layout_centerVertical="true"/>
+        <View android:layout_height="1px"
+              android:layout_width="match_parent"
+              android:background="@android:color/white"
+              android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center"
+    >
+        <ImageView
+                android:id="@+id/photo_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="6dp"
+                android:scaleType="centerCrop"/>
+
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            <TableRow
+                android:layout_marginLeft="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userName"
+                    android:text="Имя пользователя"
+                    android:layout_marginTop="15dp"
+                    android:textSize="16sp"
+                    />
+
+            <TextView
+                    android:id="@+id/userTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="19dp"
+
+                    />
+        </TableRow>
+
+            <TableRow
+                    android:layout_marginLeft="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userGender"
+                    android:text="Пол"
+                    android:layout_marginTop="15dp"
+                    android:textSize="17sp"/>
+
+            <TextView
+                    android:id="@+id/genderTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="19dp"
+                    />
+        </TableRow>
+
+            <TableRow
+                    android:layout_marginLeft="10dp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/userCity"
+                        android:text="Город"
+                        android:layout_marginTop="15dp"
+                        android:textSize="16sp"/>
+                <TextView
+                        android:id="@+id/cityTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="19dp"/>
+            </TableRow>
+
+            <TableRow
+                    android:layout_marginLeft="10dp">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/userStatus"
+                        android:text="Семейное положение"
+                        android:layout_marginTop="15dp"
+                        android:textSize="17sp"/>
+            <TextView
+                    android:id="@+id/statusTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="19dp"/>
+        </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

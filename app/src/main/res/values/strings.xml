@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">kotApp</string>
+
+    <integer name="com_vk_sdk_AppId">7163003</integer>
+</resources>
